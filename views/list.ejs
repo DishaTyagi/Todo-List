@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+
+    <div class="box" id="heading">
+        <h1> <%= dayToday %> </h1> 
+
+    </div>
+    
+    <div class="box">
+        
+            <%  for(var i = 0; i < newlistItems.length ; i++){   %>
+                    <div class="item">
+                        <input type="checkbox">
+                        <p> <%= newlistItems[i] %> </p>
+
+                    </div>
+            <%  } %>  
+
+            <form action="/" method="POST" class="item">
+                <input type="text" name="newItem" placeholder="Enter the task" autocomplete="off">
+                <button type="submit">+</button>
+        
+           </form>
+        
+    </div>
+   
+    <!-- <div id="contact" class="contact-class">
+
+        <div style="text-align: center;">
+            <a href="mailto:omgdisha@gmail.com" class="fa fa-envelope"></a>
+            &emsp;
+            <a href="https://www.facebook.com/disha.tyagi.585112" class=" fa fa-facebook"></a>
+            &emsp;
+            <a href="https://twitter.com/Disha69956344" class=" fa fa-twitter"></a>
+            &emsp;
+            <a href="https://www.instagram.com/dishatyagi27/" class=" fa fa-instagram"></a>
+            &emsp;
+            <a href="https://github.com/DishaTyagi" class="fa fa-github"></a>
+            &emsp;
+            
+        </div>
+
+    </div> -->
+
+
+</body>
+</html>
