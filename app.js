@@ -27,11 +27,9 @@ app.post("/", (req,res) => {
     res.redirect("/");
 
 });
-//comment 3
+
 app.listen(process.env.PORT || 3000, ()=>{
     //process.env.port for heroku deploy
     console.log("Server is running on the port 3000");
     
 })
-//comment 1
-//comment 2
